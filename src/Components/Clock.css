@@ -1,0 +1,75 @@
+:root {
+    --Main1: #1C315E;
+    --Main2: #227C70;
+    --Main3: #88A47C;
+    --Main4: #E6E2C3;
+
+    --DarkBlue4: #0A2647;
+    --DarkBlue3: #144272;
+    --DarkBlue2: #205295;
+    --DarkBlue1: #2C74B3;
+
+    --MiniGray: #393E46;
+    --MiniGreen: #6D9886;
+    --MiniBeige: #F2E7D5;
+    --MiniWhite: #F7F7F7;
+
+    --Clock1: #1A120B;
+    --Clock2: #3C2A21;
+    --Clock3: #D5CEA3;
+    --Clock4: #E5E5CB;
+
+    --Timer1: #F8EDE3;
+    --Timer2: #DFD3C3;
+    --Timer3: #D0B8A8;
+    --Timer4: #85586F;
+
+    --Stop1: #EB455F;
+    --Stop2: #FCFFE7;
+    --Stop3: #BAD7E9;
+    --Stop4: #2B3467;
+}
+
+/* Toggle Button */
+#ToggleCon {
+    display: flex;
+    justify-content: end;
+}
+.TCon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+}
+
+/* App Container */
+#AppZone {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Clock Zone */
+#ClockZone {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.CCon, .DCon {
+    width: 75%;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+/* Switch Zone */
+#SwitchZone {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.SCon {
+    position: absolute;
+    bottom: 8rem;
+    width: 75%;
+    height: 50px;
+    border: 1px solid #000;
+}

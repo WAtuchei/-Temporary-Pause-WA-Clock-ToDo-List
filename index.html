@@ -5,21 +5,23 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="author" content="WAtuchei">
-   <link rel="stylesheet" href="./src/Components/style.css">
+   <link rel="stylesheet" href="./src/Components/Loader.css">
    <link rel="stylesheet" href="./src/Components/Navbar.css">
-   <link rel="stylesheet" href="./src/Components/Clock.css">
+   <link rel="stylesheet" href="./src/Components/AppScreen.css">
+   <link rel="stylesheet" href="./src/Components/ClockApp/Analog.css">
+   <link rel="stylesheet" href="./src/Components/Switch.css">
    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
    <title>Clock & To Do List</title>
 </head>
 <body>
-   <!-- Loading Screen -->
+   <!-- Loading Screen --> <!--Loader.css-->
    <div class="spinnerCON" style="display: none;">
       <div class="spinner-3"></div>
    </div>
 
-   <!-- Navbar -->
+   <!-- Navbar --> <!--Navbar.css-->
    <nav class="navbar navbar-expand-md py-0">
       <div class="container">
          <div class="d-inline">
@@ -47,6 +49,7 @@
                          <span class="h5 mx-3 my-auto text-light">GitHub</span>
                      </a>
                </li>
+
                <li class="nav-item mx-auto my-2">
                      <a href="https://youtube.com" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40"  fill="#000" class="bi bi-youtube" viewBox="0 0 16 16">
@@ -55,6 +58,7 @@
                         <span class="h5 mx-3 my-auto text-light">GitHub</span>
                      </a>
                </li>
+
                <li class="nav-item mx-auto my-2">
                   <a href="#">
                      <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="#fff" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
@@ -62,13 +66,13 @@
                         <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
                       </svg>
                   </a>
-            </li>
+               </li>
             </ul>
          </div>
       </div>
    </nav>
 
-   <!-- Toggle Button -->
+   <!-- Toggle Button --> <!--App.css-->
    <div id="ToggleCon" class="container py-3">
       <div class="TCon">
 
@@ -78,11 +82,34 @@
    <!-- App Zone -->
    <div id="AppZone" class="container">
 
-      <!-- Clock Zone -->
+      <!-- Clock Zone --> <!--Analog.css-->
       <div id="ClockZone" class="container">
          <!-- Analog -->
          <div class="CCon">
+            <div class="CFace">
+               <div class="CCenter"></div>
+               <div class="Hand Hours"></div>
+               <div class="Hand Mins"></div>
+               <div class="Hand Seconds"></div>
 
+               <!-- Numbers -->
+            <div class="NumberCon">
+               <span class="Nums">12</span>
+               <span class="Nums">1</span>
+               <span class="Nums">2</span>
+               <span class="Nums">3</span>
+               <span class="Nums">4</span>
+               <span class="Nums">5</span>
+               <span class="Nums">6</span>
+               <span class="Nums">7</span>
+               <span class="Nums">8</span>
+               <span class="Nums">9</span>
+               <span class="Nums">10</span>
+               <span class="Nums">11</span>
+            </div>
+            </div>
+
+            
          </div>
 
          <!-- Digital -->

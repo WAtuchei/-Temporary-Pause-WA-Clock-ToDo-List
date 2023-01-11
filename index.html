@@ -11,7 +11,6 @@
    <link rel="stylesheet" href="./src/Components/ClockApp/Analog.css">
    <link rel="stylesheet" href="./src/Components/Switch.css">
    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
    <title>Clock & To Do List</title>
 </head>
@@ -31,7 +30,7 @@
             <a id="Logo" href="#">WAtuchei</a>
          </div>
 
-   <!-- Collapse Menu -->
+      <!-- Collapse Menu -->
          <div id="NavMenu" class="navbar-collapse collapse">
             <ul class="navbar-nav py-1" style="display: none;">
                <li class="nav-item mx-auto">
@@ -40,7 +39,6 @@
                   <a class="my-2" href="#">About</a>
                </li>
             </ul>
-
       <!-- About -->
             <ul id="About" class="navbar-nav py-1" style="display: flex;">
                <li class="nav-item mx-auto my-2">
@@ -72,62 +70,65 @@
       </div>
    </nav>
 
-   <!-- Toggle Button --> <!--App.css-->
-   <div id="ToggleCon" class="container py-3">
-      <div class="TCon">
+   <!-- App Container --> <!--AppScreen.css-->
+   <div id="AppScreen" class="container">
+      <!-- Toggle Button -->
+      <div id="ToggleCon" class="container py-3">
+         <div class="TCon">
 
+         </div>
       </div>
-   </div>
 
-   <!-- App Zone -->
-   <div id="AppZone" class="container">
-
-      <!-- Clock Zone --> <!--Analog.css-->
-      <div id="ClockZone" class="container">
-         <!-- Analog -->
-         <div class="CCon">
-            <div class="CFace">
-               <div class="CCenter"></div>
-               <div class="Hand Hours"></div>
-               <div class="Hand Mins"></div>
-               <div class="Hand Seconds"></div>
-
+      <!-- App Zone -->
+      <div id="ClockAppZone" class="container">
+         <!-- Clock Zone -->
+         <div id="ClockZone" class="container">
+            <!-- Analog -->  <!--Analog.css-->
+            <div class="CCon">
+               <div class="CFace">
+                  <div class="CCenter"></div>
+                  <div class="Hand Hours"></div>
+                  <div class="Hand Mins"></div>
+                  <div class="Hand Seconds"></div>
                <!-- Numbers -->
-            <div class="NumberCon">
-               <span class="Nums">12</span>
-               <span class="Nums">1</span>
-               <span class="Nums">2</span>
-               <span class="Nums">3</span>
-               <span class="Nums">4</span>
-               <span class="Nums">5</span>
-               <span class="Nums">6</span>
-               <span class="Nums">7</span>
-               <span class="Nums">8</span>
-               <span class="Nums">9</span>
-               <span class="Nums">10</span>
-               <span class="Nums">11</span>
+               <div class="NumberCon">
+                  <span class="Nums">12</span>
+                  <span class="Nums">1</span>
+                  <span class="Nums">2</span>
+                  <span class="Nums">3</span>
+                  <span class="Nums">4</span>
+                  <span class="Nums">5</span>
+                  <span class="Nums">6</span>
+                  <span class="Nums">7</span>
+                  <span class="Nums">8</span>
+                  <span class="Nums">9</span>
+                  <span class="Nums">10</span>
+                  <span class="Nums">11</span>
+               </div>
+               </div>
             </div>
+
+            <!-- Digital -->
+            <div class="DCCon" style="display: none;">
+
             </div>
-
-            
-         </div>
-
-         <!-- Digital -->
-         <div class="DCCon" style="display: none;">
-
          </div>
       </div>
 
-      <!-- Switch Zone -->
+      <!-- Switch Zone --> <!-- AppScreen.css-->
       <div id="SwitchZone" class="container">
-         <div class="SCon">
-            
+         <div class="SCon">  <!-- Switch.css -->
+            <div class="SwitchGroup btn-group">
+               <button class="SwitchBTN btn active">Clock</button>
+               <button class="SwitchBTN btn">Stop Watch</button>
+               <button class="SwitchBTN btn">Timer</button>
+            </div>
          </div>
       </div>
    </div>
 
-   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    <script src="./src/Components/main.js"></script>
 </body>
 </html>

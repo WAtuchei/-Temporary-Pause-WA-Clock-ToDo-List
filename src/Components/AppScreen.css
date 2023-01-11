@@ -1,5 +1,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
+body {height: 100vh;}
+
 :root {
     --Main1: #1C315E;
     --Main2: #227C70;
@@ -32,27 +34,60 @@
     --Stop4: #2B3467;
 }
 
+#AppScreen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--Timer2);
+}
+
 /* Toggle Button */
 #ToggleCon {
     display: flex;
     justify-content: end;
-}
-.TCon {
-    width: 70px;
-    height: 70px;
-    border: 1px solid #000;
-}
-
-/* App Container */
-#AppZone {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+}    .TCon {
+       width: 70px;
+       height: 70px;
+       border: 1px solid #000;
+    }
 
 /* Clock Zone */
+#ClockAppZone { padding: 4rem 0; }
 #ClockZone {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+}
+
+/* Switch Zone */
+#SwitchZone {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+
+
+/*Media Query*/
+@media only screen and (max-width: 400px) {
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 576px) {
+  
+}   
+
+@media only screen and (min-width: 576px) and (max-width: 767px) /*sm*/ {
+  
+}    
+
+@media only screen and (min-width: 768px) and (max-width: 991px) /*md*/ {
+
+}   
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) /*lg*/ {
+
+}   
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) /*xl*/ {
+    
 }

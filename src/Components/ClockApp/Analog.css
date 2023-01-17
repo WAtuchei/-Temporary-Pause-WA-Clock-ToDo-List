@@ -1,4 +1,4 @@
-.CCon, .DCon {
+.CCon {
     min-width: 300px;
     min-height: 300px;
 }
@@ -13,39 +13,35 @@
 }
 /* Center Dot */
 .CCenter {  
+    position: absolute;
     width: 3%;
     height: 3%;
+    left: 49%;
+    top: 50%;
     border-radius: 50%;
     background-color: var(--Clock1);
-    position: absolute;
-    left: 49%;
-    top: 50%;
-}
-.Hand {
-    position: absolute;
-    left: 49%;
-    top: 50%;
-}
-.Hours {
-    border-left: 8px solid #000;
-    height: 25%;
-    transform: translateY(-88%) rotate(0deg);
-}
-.Mins {
-    border-left: 8px solid #2C74B3;
-    height: 35%;
-    transform: translateY(-92%) rotate(0deg);
-}
-.Seconds {
-    border-left: 3px solid #000;
-    height: 35%;
-    transform: translateX(80%) translateY(-92%) rotate(0deg);
-}
+}   
+    .Hand {
+       position: absolute;
+       left: 49%;
+       top: 50%;}
+    #Hours {
+        height: 25%;
+        border-left: 8px solid #000;
+        transform: translateY(-88%) rotate(0deg);}
+    #Mins {
+        height: 35%;
+        border-left: 8px solid #2C74B3;
+        transform: translateY(-92%) rotate(0deg);}
+    #Seconds {
+        height: 35%;
+        border-left: 3px solid #000;
+        transform: translateX(80%) translateY(-92%) rotate(0deg);}
 
 /* Numbers  Start 12 */
-.Nums { 
-    font-size: 1.5rem;
+.Nums {
     position: absolute;
+    font-size: 1.5rem;
     transform: translateX(-50%) translateY(-50%); }
 .Nums:nth-child(1) { left: 50%; top: 7%; } .Nums:nth-child(2) { left: 71%; top: 12%; }
 .Nums:nth-child(3) { left: 87%; top: 29%; } .Nums:nth-child(4) { left: 93%; top: 50%; }

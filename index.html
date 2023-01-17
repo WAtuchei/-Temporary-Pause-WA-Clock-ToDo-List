@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="./src/Components/Navbar.css">
    <link rel="stylesheet" href="./src/Components/AppScreen.css">
    <link rel="stylesheet" href="./src/Components/ClockApp/Analog.css">
+   <link rel="stylesheet" href="./src/Components/ClockApp/Digital.css">
    <link rel="stylesheet" href="./src/Components/Switch.css">
    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -71,25 +72,25 @@
    </nav>
 
    <!-- App Container --> <!--AppScreen.css-->
-   <div id="AppScreen" class="container">
+   <section id="AppScreen" class="container">
       <!-- Toggle Button -->
-      <div id="ToggleCon" class="container py-3">
+      <section id="ToggleCon" class="container py-3">
          <div class="TCon">
 
          </div>
-      </div>
+      </section>
 
       <!-- App Zone -->
-      <div id="ClockAppZone" class="container">
+      <section id="ClockAppZone" class="container">
          <!-- Clock Zone -->
          <div id="ClockZone" class="container">
             <!-- Analog -->  <!--Analog.css-->
-            <div class="CCon">
+            <div class="CCon" style="display: none;">
                <div class="CFace">
                   <div class="CCenter"></div>
-                  <div class="Hand Hours"></div>
-                  <div class="Hand Mins"></div>
-                  <div class="Hand Seconds"></div>
+                  <div id="Hours" class="Hand"></div>
+                  <div id="Mins" class="Hand"></div>
+                  <div id="Seconds" class="Hand"></div>
                <!-- Numbers -->
                <div class="NumberCon">
                   <span class="Nums">12</span>
@@ -108,15 +109,31 @@
                </div>
             </div>
 
-            <!-- Digital -->
-            <div class="DCCon" style="display: none;">
-
+            <!-- Digital --> <!-- Digital.css -->
+            <div class="DCCon">
+               <div class="DCFace">
+                  <!-- Time -->
+                  <div class="DCTime">
+                        <span id="DHours">15</span>
+                        <span id="DPoint">:</span>
+                        <span id="DMins">05</span>
+                        <span id="DPoint">:</span>
+                        <span id="DSeconds">05</span>
+                  </div>
+                  <!-- Date -->
+                  <div class="DCDate">
+                     <span id="Day">Mon</span>
+                     <span id="Date">14</span>
+                     <span id="Month">Janustrye</span>
+                     <span id="Year">2134</span>
+                  </div>
+               </div>
             </div>
          </div>
-      </div>
+      </section>
 
       <!-- Switch Zone --> <!-- AppScreen.css-->
-      <div id="SwitchZone" class="container">
+      <section id="SwitchZone" class="container">
          <div class="SCon">  <!-- Switch.css -->
             <div class="SwitchGroup btn-group">
                <button class="SwitchBTN btn active">Clock</button>
@@ -124,8 +141,8 @@
                <button class="SwitchBTN btn">Timer</button>
             </div>
          </div>
-      </div>
-   </div>
+      </section>
+   </section>
 
    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

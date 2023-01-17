@@ -6,7 +6,8 @@
 .SwitchGroup {
     width: 100%;
     height: 100%;
-}   .SwitchBTN {
+}   
+    .SwitchBTN {
         border: 1px solid var(--DarkBlue2) !important;
         color: #fff !important;
         background-color: var(--DarkBlue4) !important;
@@ -16,5 +17,4 @@
     }
     .SwitchBTN:not(.active):hover {
         background-color: var(--DarkBlue1) !important;
-        transition: ease 0.4s;
-    }
+        transition: ease 0.4s;}

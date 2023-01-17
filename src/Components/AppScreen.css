@@ -35,9 +35,9 @@ body {height: 100vh;}
 }
 
 #AppScreen {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
     background-color: var(--Timer2);
 }
 
@@ -51,7 +51,7 @@ body {height: 100vh;}
        border: 1px solid #000;
     }
 
-/* Clock Zone */
+/* Clock App */
 #ClockAppZone { padding: 4rem 0; }
 #ClockZone {
     display: flex;

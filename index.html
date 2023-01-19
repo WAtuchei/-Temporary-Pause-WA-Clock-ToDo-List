@@ -22,7 +22,7 @@
    </div>
 
    <!-- Navbar --> <!--Navbar.css-->
-   <nav class="navbar navbar-expand-md py-0">
+   <nav class="navbar navbar-expand-md pt-2">
       <div class="container">
          <div class="d-inline">
             <button class="navbar-toggler py-auto mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#NavMenu" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,51 +84,75 @@
       <section id="ClockAppZone" class="container">
          <!-- Clock Zone -->
          <div id="ClockZone" class="container">
-            <!-- Analog -->  <!--Analog.css-->
-            <div class="CCon" style="display: none;">
-               <div class="CFace">
-                  <div class="CCenter"></div>
-                  <div id="Hours" class="Hand"></div>
-                  <div id="Mins" class="Hand"></div>
-                  <div id="Seconds" class="Hand"></div>
-               <!-- Numbers -->
-               <div class="NumberCon">
-                  <span class="Nums">12</span>
-                  <span class="Nums">1</span>
-                  <span class="Nums">2</span>
-                  <span class="Nums">3</span>
-                  <span class="Nums">4</span>
-                  <span class="Nums">5</span>
-                  <span class="Nums">6</span>
-                  <span class="Nums">7</span>
-                  <span class="Nums">8</span>
-                  <span class="Nums">9</span>
-                  <span class="Nums">10</span>
-                  <span class="Nums">11</span>
+            <!-- BS Carousel -->
+            <section id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="false">
+               <div class="carousel-indicators">
+                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                </div>
-               </div>
-            </div>
 
-            <!-- Digital --> <!-- Digital.css -->
-            <div class="DCCon">
-               <div class="DCFace">
-                  <!-- Time -->
-                  <div class="DCTime">
-                        <span id="DHours">15</span>
-                        <span id="DPoint">:</span>
-                        <span id="DMins">05</span>
-                        <span id="DPoint">:</span>
-                        <span id="DSeconds">05</span>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                  <!-- Analog -->  <!--Analog.css-->
+                     <div class="CCon">
+                        <div class="CFace">
+                           <div class="CCenter"></div>
+                           <div id="Hours" class="Hand"></div>
+                           <div id="Mins" class="Hand"></div>
+                           <div id="Seconds" class="Hand"></div>
+                     <!-- Numbers -->
+                        <div class="NumberCon">
+                           <span class="Nums">12</span>
+                           <span class="Nums">1</span>
+                           <span class="Nums">2</span>
+                           <span class="Nums">3</span>
+                           <span class="Nums">4</span>
+                           <span class="Nums">5</span>
+                           <span class="Nums">6</span>
+                           <span class="Nums">7</span>
+                           <span class="Nums">8</span>
+                           <span class="Nums">9</span>
+                           <span class="Nums">10</span>
+                           <span class="Nums">11</span>
+                        </div>
+                     </div>
                   </div>
-                  <!-- Date -->
-                  <div class="DCDate">
-                     <span id="Day">Mon</span>
-                     <span id="Date">14</span>
-                     <span id="Month">Janustrye</span>
-                     <span id="Year">2134</span>
                   </div>
+
+                  <div class="carousel-item">
+                  <!-- Digital     Digital.css -->
+                     <div class="DCCon">
+                        <div class="DCFace">
+                        <!-- Time -->
+                           <div class="DCTime">
+                              <span id="DHours">15</span>
+                              <span id="DPoint">:</span>
+                              <span id="DMins">05</span>
+                              <span id="DPoint">:</span>
+                              <span id="DSeconds">05</span>
+                           </div>
+                        <!-- Date -->
+                           <div class="DCDate">
+                              <span id="Day">Mon</span>
+                              <span id="Date">14</span>
+                              <span id="Month">Janustrye</span>
+                              <span id="Year">2134</span>
+                           </div>
+                     </div>
+                  </div>
+                 </div>
                </div>
-            </div>
+
+               <!-- Carousel Buttons -->
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+             </section>
          </div>
       </section>
 

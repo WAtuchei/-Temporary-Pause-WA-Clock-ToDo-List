@@ -14,29 +14,60 @@
 /* Center Dot */
 .CCenter {  
     position: absolute;
-    width: 3%;
-    height: 3%;
     left: 49%;
     top: 50%;
+    z-index: 1;
+    width: 3%;
+    height: 3%;
     border-radius: 50%;
     background-color: var(--Clock1);
+
 }   
-    .Hand {
-       position: absolute;
-       left: 49%;
-       top: 50%;}
+    .Hand { position: absolute;}
     #Hours {
+        z-index: 2;
+        top: 26.7%;
+        left: 49.2%;
         height: 25%;
-        border-left: 8px solid #000;
-        transform: translateY(-88%) rotate(0deg);}
+        width: 6px;
+        border-radius: 10px 10px 0 0;
+        background-color: #000;
+        transform-origin: 50% 100%;
+        transform: rotate(90deg);
+    animation: Hour 30s infinite linear;}
     #Mins {
+        top: 16.8%;
+        left: 49.2%;
         height: 35%;
-        border-left: 8px solid #2C74B3;
-        transform: translateY(-92%) rotate(0deg);}
+        width: 4px;
+        border-radius: 5px 5px 0 0;
+        background-color: red;
+        transform-origin: 50% 100%;
+        transform: rotate(270deg);
+    animation: Min 20s infinite linear;}
     #Seconds {
+        top: 16.8%;
+        left: 50%;
         height: 35%;
-        border-left: 3px solid #000;
-        transform: translateX(80%) translateY(-92%) rotate(0deg);}
+        width: 2px;
+        border-radius: 5px 5px 0 0;
+        background-color: green;
+        transform-origin: 50% 100%;
+        transform: rotate(0deg);
+    animation: Sec 10s infinite linear;}
+
+    @keyframes Hour {
+        from { transform: rotate(90deg);}
+        to { transform: rotate(450deg);}
+    }
+    @keyframes Min {
+        from { transform: rotate(270deg);}
+        to { transform: rotate(630deg);}
+    }
+    @keyframes Sec {
+        from { transform: rotate(0deg);}
+        to { transform: rotate(360deg);}
+    }
 
 /* Numbers  Start 12 */
 .Nums {

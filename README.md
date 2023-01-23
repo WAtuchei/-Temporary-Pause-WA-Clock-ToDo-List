@@ -4,8 +4,11 @@
 
 The Clock app is contains 3 functions.  
 -The first is Clock app, there are Analog and Digital modes switch by slide.
+
 -The second is Stop Watch app, it's just only counting the time and take some split time.
+
 -The last is Timer app, this is the countdown timer.
+
 
 The To-Do List app, from my concept I'll have them working about 5 functions.
 1. Add Post

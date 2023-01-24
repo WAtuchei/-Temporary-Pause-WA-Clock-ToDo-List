@@ -24,7 +24,7 @@
 
 }   
     .Hand { position: absolute;}
-    #Hours {
+    #CHours {
         z-index: 2;
         top: 26.7%;
         left: 49.2%;
@@ -35,7 +35,7 @@
         transform-origin: 50% 100%;
         transform: rotate(90deg);
     animation: Hour 30s infinite linear;}
-    #Mins {
+    #CMins {
         top: 16.8%;
         left: 49.2%;
         height: 35%;
@@ -45,7 +45,7 @@
         transform-origin: 50% 100%;
         transform: rotate(270deg);
     animation: Min 20s infinite linear;}
-    #Seconds {
+    #CSeconds {
         top: 16.8%;
         left: 50%;
         height: 35%;

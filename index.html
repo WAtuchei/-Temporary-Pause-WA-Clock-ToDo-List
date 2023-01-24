@@ -8,7 +8,8 @@
    <link rel="stylesheet" href="./src/Components/Loader.css">
    <link rel="stylesheet" href="./src/Components/Navbar.css">
    <link rel="stylesheet" href="./src/Components/AppScreen.css">
-   <link rel="stylesheet" href="./src/Components/ClockApp/Analog.css">
+   <link rel="stylesheet" href="./src/Components/ClockApp/Carousel.css">
+   <link defer rel="stylesheet" href="./src/Components/ClockApp/Analog.css">
    <link rel="stylesheet" href="./src/Components/ClockApp/Digital.css">
    <link rel="stylesheet" href="./src/Components/Switch.css">
    <link rel="stylesheet" href="./src/Components/Framework/bootstrap.min.css">
@@ -80,9 +81,10 @@
          </div>
       </section>
 
-      <!-- App Zone -->
+      <!-- App Container Zone -->
       <section id="ClockAppZone" class="container">
-         <!-- Clock Zone -->
+
+         <!-- Clock Zone -->  <!-- Clock App nesting starts here-->
          <div id="ClockZone" class="container">
             <!-- BS Carousel -->
             <section id="ClockSlide" class="carousel carousel-dark slide" data-bs-ride="false">
@@ -97,9 +99,9 @@
                      <div class="CCon">
                         <div class="CFace">
                            <div class="CCenter"></div>
-                           <div id="Hours" class="Hand"></div>
-                           <div id="Mins" class="Hand"></div>
-                           <div id="Seconds" class="Hand"></div>
+                           <div id="CHours" class="Hand"></div>
+                           <div id="CMins" class="Hand"></div>
+                           <div id="CSeconds" class="Hand"></div>
                      <!-- Numbers -->
                         <div class="NumberCon">
                            <span class="Nums">12</span>
@@ -134,9 +136,9 @@
                         <!-- Date -->
                            <div class="DCDate">
                               <span id="Day">Mon</span>
-                              <span id="Date">14</span>
-                              <span id="Month">Janustrye</span>
-                              <span id="Year">2134</span>
+                              <span id="Date">1</span>
+                              <span id="Month">January</span>
+                              <span id="Year">1970</span>
                            </div>
                      </div>
                   </div>
@@ -153,7 +155,7 @@
                   <span class="visually-hidden">Next</span>
                </button>
              </section>
-         </div>
+         </div> <!-- Clock App Nesting ends here-->
       </section>
 
       <!-- Switch Zone --> <!-- AppScreen.css-->
@@ -170,6 +172,6 @@
 
    <script src="./src/Components/Framework/jquery.min.js"></script>
    <script src="./src/Components/Framework/bootstrap.min.js"></script>
-   <script src="./src/Components/main.js"></script>
+   <script src="./src/Components/ClockApp/Clock.js"></script>
 </body>
 </html>

@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Sofia);
+/* Sofia */
 
 nav {background-color: var(--Main2);}
 
 #Logo {
-    font-family: "Sofia", san-serif;
+    font-family: "Sofia", Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     text-decoration: none;
     color: #000;

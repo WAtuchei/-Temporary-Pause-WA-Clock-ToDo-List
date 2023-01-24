@@ -2,7 +2,6 @@
     min-width: 300px;
     min-height: 300px;
 }
-
 .CFace {
     position: absolute;
     width: 100%;
@@ -21,7 +20,6 @@
     height: 3%;
     border-radius: 50%;
     background-color: var(--Clock1);
-
 }   
     .Hand { position: absolute;}
     #CHours {
@@ -34,7 +32,7 @@
         background-color: #000;
         transform-origin: 50% 100%;
         transform: rotate(90deg);
-    animation: Hour 30s infinite linear;}
+    }
     #CMins {
         top: 16.8%;
         left: 49.2%;
@@ -44,7 +42,7 @@
         background-color: red;
         transform-origin: 50% 100%;
         transform: rotate(270deg);
-    animation: Min 20s infinite linear;}
+    }
     #CSeconds {
         top: 16.8%;
         left: 50%;
@@ -54,21 +52,7 @@
         background-color: green;
         transform-origin: 50% 100%;
         transform: rotate(0deg);
-    animation: Sec 10s infinite linear;}
-
-    @keyframes Hour {
-        from { transform: rotate(90deg);}
-        to { transform: rotate(450deg);}
     }
-    @keyframes Min {
-        from { transform: rotate(270deg);}
-        to { transform: rotate(630deg);}
-    }
-    @keyframes Sec {
-        from { transform: rotate(0deg);}
-        to { transform: rotate(360deg);}
-    }
-
 /* Numbers  Start 12 */
 .Nums {
     position: absolute;

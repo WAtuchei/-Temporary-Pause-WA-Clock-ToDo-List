@@ -65,6 +65,12 @@ body {
     justify-content: center;
 }
 
+/* Stop Watch App */
+#StopAppZone { padding: 4rem 0;  display: none;}
+#StopZone {
+    display: flex;
+    justify-content: center;
+}
 
 /* Switch Zone */
 #SwitchZone {
@@ -73,6 +79,14 @@ body {
     padding: 2rem 0;
 }
 
+/* App Transition */   
+.App-show {
+    animation: Hidden-Show 1s ease-in reverse;
+}
+@keyframes Hidden-Show {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
 
 
 /*Media Query*/

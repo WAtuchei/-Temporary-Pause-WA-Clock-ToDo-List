@@ -26,7 +26,7 @@ const Clock = () => { setInterval(() => {
 
     // Analog Clock
     const hoursDeg = (360/12) * hours + (360/12/60) * mins;
-    const minsDeg = (360/60) * mins + (360/60/60) * seconds;
+    const minsDeg = (360/60) * mins + (360/60/60) * seconds - 1;
     const secsDeg = (360/60) * seconds;
     ClockHours.style.transform = `rotate(${hoursDeg}deg)`
     ClockMins.style.transform = `rotate(${minsDeg}deg)`

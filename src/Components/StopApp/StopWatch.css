@@ -8,25 +8,38 @@
     display: flex;
     flex-direction: column;
 }
-#Stop-Mins, #Stop-Seconds, #Stop-Millisecs {
+#Stop-Mins, #Stop-Seconds{
     display: flex;
-    flex: 5 0 auto;
+    min-width: 5.5rem;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
 }
-
+    #Stop-Millisecs {
+        display: flex;
+        min-width: 5.3rem;
+        font-size: 3rem;
+    }
 .Split-Time {
     display: flex;
     flex: 30 0 auto;
     border: 1px solid #000;
+}
+.Split-Sheet {
+    display: flex;
+    flex-direction: column;
+}
+   .Lap-Split {
+    flex: 1 0 auto;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .Stop-Switch {
     display: flex;
     justify-content: center;
     align-items: end;
-    flex: 1 0 auto;
+    flex: 20 0 auto;
 }
     .sideBTN {
         padding: 0.5rem 1.2rem !important;

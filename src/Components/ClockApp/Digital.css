@@ -21,7 +21,7 @@
 }
    #Digi-Hours, #Digi-Mins, #Digi-Seconds {
         display: flex;
-        flex: 5 0 auto;
+        min-width: 5.3rem;
         align-items: center;
         justify-content: center;
         font-size: 3rem;

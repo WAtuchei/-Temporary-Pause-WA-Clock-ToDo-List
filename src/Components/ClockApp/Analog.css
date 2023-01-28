@@ -1,8 +1,8 @@
-.CCon {
+.ClockCon {
     min-width: 300px;
     min-height: 300px;
 }
-.CFace {
+.Clock-Face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -11,7 +11,7 @@
     background-color: var(--Clock4);
 }
 /* Center Dot */
-.CCenter {  
+.Clock-Center {  
     position: absolute;
     left: 49%;
     top: 50%;
@@ -22,7 +22,7 @@
     background-color: var(--Clock1);
 }   
     .Hand { position: absolute;}
-    #CHours {
+    #Clock-Hours {
         z-index: 2;
         top: 26.7%;
         left: 49.2%;
@@ -33,7 +33,7 @@
         transform-origin: 50% 100%;
         transform: rotate(90deg);
     }
-    #CMins {
+    #Clock-Mins {
         top: 16.8%;
         left: 49.2%;
         height: 35%;
@@ -43,7 +43,7 @@
         transform-origin: 50% 100%;
         transform: rotate(270deg);
     }
-    #CSeconds {
+    #Clock-Seconds {
         top: 16.8%;
         left: 50%;
         height: 35%;

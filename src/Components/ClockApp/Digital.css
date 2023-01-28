@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 /* Font Orbitron */
 
-.DCCon {
+.DigiCon {
     min-width: 300px;
     min-height: 300px;
     display: flex;
     align-items: center;
 }
-.DCFace {
+.Digi-Face {
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
 }
 /* Time */
-.DCTime {
+.Digi-Time {
     display: flex;
     flex: 5 0 auto;
     font-family: 'Orbitron', Arial, Helvetica, sans-serif;
 }
-   #DCHours, #DCMins, #DCSeconds {
+   #Digi-Hours, #Digi-Mins, #Digi-Seconds {
         display: flex;
         flex: 5 0 auto;
         align-items: center;
         justify-content: center;
         font-size: 3rem;
     }
-    #DCPoint {
+    #Digi-Point {
         display: flex;
         flex: 1 0 auto;
         align-items: center;
@@ -34,13 +34,13 @@
         font-size: 2rem;
     }
 /* Date */
-.DCDate {
+.Digi-Date {
     display: flex;
     flex: 3 0 auto;
     align-items: center;
     justify-content: center;
 }
-    .DCDate span {
+    .Digi-Date span {
         margin: 0 0.3rem;
         font-size: 1.2rem;
         font-family: 'Orbitron', Arial, Helvetica, sans-serif;

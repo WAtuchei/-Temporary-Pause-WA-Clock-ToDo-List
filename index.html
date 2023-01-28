@@ -91,12 +91,12 @@
                <div class="carousel-inner">
                   <div class="carousel-item active">
                   <!-- Analog -->  <!--Analog.css-->
-                     <div class="CCon">
-                        <div class="CFace">
-                           <div class="CCenter"></div>
-                           <div id="CHours" class="Hand"></div>
-                           <div id="CMins" class="Hand"></div>
-                           <div id="CSeconds" class="Hand"></div>
+                     <div class="ClockCon">
+                        <div class="Clock-Face">
+                           <div class="Clock-Center"></div>
+                           <div id="Clock-Hours" class="Hand"></div>
+                           <div id="Clock-Mins" class="Hand"></div>
+                           <div id="Clock-Seconds" class="Hand"></div>
                      <!-- Numbers -->
                         <div class="NumberCon">
                            <span class="Nums">12</span>
@@ -117,19 +117,19 @@
                   </div>
 
                   <div class="carousel-item">
-                  <!-- Digital     Digital.css -->
-                     <div class="DCCon">
-                        <div class="DCFace">
+                  <!-- Digital Clock Digital.css -->
+                     <div class="DigiCon">
+                        <div class="Digi-Face">
                         <!-- Time -->
-                           <div class="DCTime">
-                              <span id="DCHours">15</span>
-                              <span id="DCPoint">:</span>
-                              <span id="DCMins">05</span>
-                              <span id="DCPoint">:</span>
-                              <span id="DCSeconds">05</span>
+                           <div class="Digi-Time">
+                              <span id="Digi-Hours">15</span>
+                              <span id="Digi-Point">:</span>
+                              <span id="Digi-Mins">05</span>
+                              <span id="Digi-Point">:</span>
+                              <span id="Digi-Seconds">05</span>
                            </div>
                         <!-- Date -->
-                           <div class="DCDate">
+                           <div class="Digi-Date">
                               <span id="Day">Mon</span>
                               <span id="Date">1</span>
                               <span id="Month">January</span>
@@ -156,15 +156,27 @@
       <section id="StopAppZone" class="container">
          <!-- Stop App Zone --> <!-- Some elements use same Digital Clock CSS -->
          <div id="StopZone" class="container">
-            <div class="DCCon">
-               <div class="DCFace">
+            <div class="DigiCon">
+               <div class="StopCon">
                <!-- Time --> <!-- StopWatch.css -->
-                  <div class="DCTime">
-                     <span id="STMins">15</span>
-                     <span id="DCPoint">:</span>
-                     <span id="STSeconds">05</span>
-                     <span id="DCPoint">:</span>
-                     <span id="STMillisecs">05</span>
+                  <div class="Digi-Time">
+                     <span id="Stop-Mins">15</span>
+                     <span id="Digi-Point">:</span>
+                     <span id="Stop-Seconds">05</span>
+                     <span id="Digi-Point">:</span>
+                     <span id="Stop-Millisecs">05</span>
+                  </div>
+                  <!-- Split sheet -->
+                  <div class="Split-Time">
+                     
+                  </div>
+                  <!-- Swithes -->
+                  <div class="Stop-Switch">
+                     <div class="">
+                        <button class="sideBTN btn btn-danger rounded-pill">Clear</button>
+                        <button class="middleBTN btn btn-danger rounded-circle">Start</button>
+                        <button class="sideBTN btn btn-danger rounded-pill">Split</button>
+                     </div>
                   </div>
             </div>
          </div>
@@ -172,7 +184,7 @@
 
       <!-- Switch Zone --> <!-- AppScreen.css-->
       <section id="SwitchZone" class="container">
-         <div class="SCon">  <!-- Switch.css -->
+         <div class="SwitchCon">  <!-- Switch.css -->
             <div class="SwitchGroup btn-group">
                <button class="SwitchBTN btn active">Clock</button>
                <button class="SwitchBTN btn">Stop Watch</button>

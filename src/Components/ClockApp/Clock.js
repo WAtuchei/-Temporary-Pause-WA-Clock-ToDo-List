@@ -1,13 +1,13 @@
 // Analog Clock
-const CHours = document.getElementById('CHours')
-const CMins = document.getElementById('CMins')
-const CSeconds = document.getElementById('CSeconds')
+const ClockHours = document.getElementById('Clock-Hours')
+const ClockMins = document.getElementById('Clock-Mins')
+const ClockSeconds = document.getElementById('Clock-Seconds')
 
 // Digital Clock
-const DHours = document.getElementById('DCHours')
-const DMins = document.getElementById('DCMins')
-const DSeconds = document.getElementById('DCSeconds')
-const DPoint = document.getElementById('DCPoint')
+const DigiHours = document.getElementById('Digi-Hours')
+const DigiMins = document.getElementById('Digi-Mins')
+const DigiSeconds = document.getElementById('Digi-Seconds')
+const DigiPoint = document.getElementById('Digi-Point')
 const DDay = document.getElementById('Day')
 const DDate = document.getElementById('Date')
 const DMonth = document.getElementById('Month')
@@ -28,14 +28,14 @@ const Clock = () => { setInterval(() => {
     const hoursDeg = (360/12) * hours + (360/12/60) * mins;
     const minsDeg = (360/60) * mins + (360/60/60) * seconds;
     const secsDeg = (360/60) * seconds;
-    CHours.style.transform = `rotate(${hoursDeg}deg)`
-    CMins.style.transform = `rotate(${minsDeg}deg)`
-    CSeconds.style.transform = `rotate(${secsDeg}deg)`
+    ClockHours.style.transform = `rotate(${hoursDeg}deg)`
+    ClockMins.style.transform = `rotate(${minsDeg}deg)`
+    ClockSeconds.style.transform = `rotate(${secsDeg}deg)`
     
     //Digital Clock
-    DHours.innerText = (hours < 10 ? `0${hours}` : hours)
-    DMins.innerText = (mins < 10 ? `0${mins}` : mins)
-    DSeconds.innerText = (seconds < 10 ? `0${seconds}` : seconds)
+    DigiHours.innerText = (hours < 10 ? `0${hours}` : hours)
+    DigiMins.innerText = (mins < 10 ? `0${mins}` : mins)
+    DigiSeconds.innerText = (seconds < 10 ? `0${seconds}` : seconds)
     DDate.innerText = daydate
     DYear.innerText = year
     switch (day) {

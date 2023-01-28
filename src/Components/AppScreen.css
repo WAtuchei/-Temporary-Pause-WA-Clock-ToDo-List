@@ -59,14 +59,20 @@ body {
     }
 
 /* Clock App */
-#ClockAppZone { padding: 4rem 0; }
+#ClockAppZone {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
 #ClockZone {
     display: flex;
     justify-content: center;
 }
 
 /* Stop Watch App */
-#StopAppZone { padding: 4rem 0;  display: none;}
+#StopAppZone {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    display: none;}
 #StopZone {
     display: flex;
     justify-content: center;

@@ -1,20 +1,20 @@
-.SwitchCon {
+.switch-con {
     width: 75%;
     height: 50px;
 }
 
-.SwitchGroup {
+.switch-group {
     width: 100%;
     height: 100%;
 }   
-    .SwitchBTN {
+    .switch-btn {
         border: 1px solid var(--DarkBlue2) !important;
         color: #fff !important;
         background-color: var(--DarkBlue4) !important;
     }
-    .SwitchBTN.active {
+    .switch-btn.active {
         background-color: var(--DarkBlue1) !important;
     }
-    .SwitchBTN:not(.active):hover {
+    .switch-btn:not(.active):hover {
         background-color: var(--DarkBlue1) !important;
         transition: ease 0.4s;}

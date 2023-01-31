@@ -91,37 +91,37 @@
                <div class="carousel-inner">
                   <div class="carousel-item active">
                   <!-- Analog -->  <!--Analog.css-->
-                     <div class="ClockCon">
-                        <div class="Clock-Face">
-                           <div class="Clock-Center"></div>
-                           <div id="Clock-Hours" class="Hand"></div>
-                           <div id="Clock-Mins" class="Hand"></div>
-                           <div id="Clock-Seconds" class="Hand"></div>
+                     <div class="clock-con">
+                        <div class="clock-face">
+                           <div class="clock-center"></div>
+                           <div id="Clock-Hours" class="hand"></div>
+                           <div id="Clock-Mins" class="hand"></div>
+                           <div id="Clock-Seconds" class="hand"></div>
                      <!-- Numbers -->
-                        <div class="NumberCon">
-                           <span class="Nums">12</span>
-                           <span class="Nums">1</span>
-                           <span class="Nums">2</span>
-                           <span class="Nums">3</span>
-                           <span class="Nums">4</span>
-                           <span class="Nums">5</span>
-                           <span class="Nums">6</span>
-                           <span class="Nums">7</span>
-                           <span class="Nums">8</span>
-                           <span class="Nums">9</span>
-                           <span class="Nums">10</span>
-                           <span class="Nums">11</span>
-                        </div>
+                        <article>
+                           <span class="nums">12</span>
+                           <span class="nums">1</span>
+                           <span class="nums">2</span>
+                           <span class="nums">3</span>
+                           <span class="nums">4</span>
+                           <span class="nums">5</span>
+                           <span class="nums">6</span>
+                           <span class="nums">7</span>
+                           <span class="nums">8</span>
+                           <span class="nums">9</span>
+                           <span class="nums">10</span>
+                           <span class="nums">11</span>
+                        </article>
                      </div>
                   </div>
                   </div>
 
                   <div class="carousel-item">
                   <!-- Digital Clock Digital.css -->
-                     <div class="DigiCon">
-                        <div class="Digi-Face">
+                     <div class="digi-con">
+                        <div class="digi-face">
                         <!-- Time -->
-                           <div class="Digi-Time">
+                           <div class="digi-time">
                               <span id="Digi-Hours">15</span>
                               <span id="Digi-Point">:</span>
                               <span id="Digi-Mins">05</span>
@@ -129,7 +129,7 @@
                               <span id="Digi-Seconds">05</span>
                            </div>
                         <!-- Date -->
-                           <div class="Digi-Date">
+                           <div class="digi-date">
                               <span id="Day">Mon</span>
                               <span id="Date">1</span>
                               <span id="Month">January</span>
@@ -156,10 +156,10 @@
       <section id="StopAppZone" class="container">
          <!-- Stop App Zone --> <!-- Some elements use same Digital Clock CSS -->
          <div id="StopZone" class="container">
-            <div class="DigiCon">
-               <div class="StopCon">
+            <div class="digi-con">
+               <div class="stop-con">
                <!-- Time --> <!-- StopWatch.css -->
-                  <div class="Digi-Time">
+                  <div class="digi-time">
                      <span id="Stop-Mins">00</span>
                      <span id="Digi-Point">:</span>
                      <span id="Stop-Seconds">00</span>
@@ -167,41 +167,41 @@
                      <span id="Stop-Millisecs">00</span>
                   </div>
                   <!-- Split sheet -->
-                  <div class="Split-Time row">
-                     <div class="Split-Sheet col-6">
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
+                  <div class="split-time row">
+                     <div class="split-sheet col-6">
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
                      </div>
-                     <div class="Split-Sheet col-6">
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
-                        <span class="Lap-Split">00:00:00</span>
+                     <div class="split-sheet col-6">
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
+                        <span class="lap-split">00:00:00</span>
                      </div>
                   </div>
                   <!-- Swithes -->
-                  <div class="Stop-Switch">
-                     <div class="">
-                        <button class="sideBTN btn btn-danger rounded-pill">Clear</button>
-                        <button class="middleBTN btn btn-danger rounded-circle">Start</button>
-                        <button class="sideBTN btn btn-danger rounded-pill">Split</button>
-                     </div>
-                  </div>
+                  <section class="stop-switch">
+                     <article class="">
+                        <button id="Clear" class="side-btn btn btn-danger rounded-pill">Clear</button>
+                        <button id="Start" class="middle-btn btn btn-danger rounded-circle">Start</button>
+                        <button id="Stop" class="side-btn btn btn-danger rounded-pill">Split</button>
+                     </article>
+                  </section>
             </div>
          </div>
       </section>
 
       <!-- Switch Zone --> <!-- AppScreen.css-->
       <section id="SwitchZone" class="container">
-         <div class="SwitchCon">  <!-- Switch.css -->
-            <div class="SwitchGroup btn-group">
-               <button class="SwitchBTN btn active">Clock</button>
-               <button class="SwitchBTN btn">Stop Watch</button>
-               <button class="SwitchBTN btn">Timer</button>
+         <div class="switch-con">  <!-- Switch.css -->
+            <div class="switch-group btn-group">
+               <button class="switch-btn btn active">Clock</button>
+               <button class="switch-btn btn">Stop Watch</button>
+               <button class="switch-btn btn">Timer</button>
             </div>
          </div>
       </section>

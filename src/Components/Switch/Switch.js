@@ -1,8 +1,8 @@
-const SwitchBTNs = document.querySelectorAll('.SwitchBTN')
+const SwitchBTNs = document.querySelectorAll('.switch-btn')
 
 // Event
 for (let BTN of SwitchBTNs){
-    BTN.addEventListener('click', (e) => {
+    BTN.addEventListener('click', () => {
 
         const ClockAppZone = document.getElementById('ClockAppZone')
         const StopAppZone = document.getElementById('StopAppZone')

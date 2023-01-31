@@ -2,7 +2,7 @@
 /* Font Orbitron */
 
 /* Time Container */
-.StopCon {
+.stop-con {
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,33 +20,33 @@
         min-width: 5.3rem;
         font-size: 3rem;
     }
-.Split-Time {
+.split-time {
     display: flex;
     flex: 30 0 auto;
     border: 1px solid #000;
 }
-.Split-Sheet {
+.split-sheet {
     display: flex;
     flex-direction: column;
 }
-   .Lap-Split {
+   .lap-split {
     flex: 1 0 auto;
     font-family: 'Orbitron', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-.Stop-Switch {
+.stop-switch {
     display: flex;
     justify-content: center;
     align-items: end;
     flex: 20 0 auto;
 }
-    .sideBTN {
+    .side-btn {
         padding: 0.5rem 1.2rem !important;
         font-size: 1.2rem !important;
         width: 6rem;
     }
-    .middleBTN {
+    .middle-btn {
         padding: 1.5rem 1.2rem !important;
         font-size: 1.5rem !important;
     }

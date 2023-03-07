@@ -1,4 +1,4 @@
-# Clock and ToDo List [Work in Progress]
+# Clock and ToDo List [Temporary Pause]
 
   This is my first BIG Project, The Super Web Applications that including Clock app and To-Do List app.
 
